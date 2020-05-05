@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export const useWizard = ({ initialPage = 0 }) => {
+export const useWizard = ({ initialPage }) => {
     const [activePage, setActivePage] = useState(initialPage)
     const [pageTotal, setPageTotal] = useState(1)
     const previousPage = () => setActivePage(activePage - 1)

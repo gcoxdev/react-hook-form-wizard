@@ -5,7 +5,6 @@ import { useWizardContext } from '../hooks/useWizardContext'
 import { usePageTotal } from '../hooks/usePageTotal'
 
 export default function WizardInner({ children, onSubmit }) {
-
     const [submitted, setSubmitted] = useState(false)
     const dataContext = useDataContext()
     const { action } = dataContext

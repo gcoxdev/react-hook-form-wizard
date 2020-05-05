@@ -5,6 +5,7 @@ import WizardInner from '../components/WizardInner'
 
 export const WizardContextProvider = ({ children, initialPage, onSubmit }) => {
     const wizard = useWizard({ initialPage })
+
     return (
         <WizardContext.Provider value={wizard}>
             <WizardInner onSubmit={onSubmit}>

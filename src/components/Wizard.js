@@ -8,7 +8,7 @@ createStore({
     data: {}
 })
 
-function Wizard({ children, useFormArgs, initialPage, onSubmit, enableDevTool }) {
+function Wizard({ children, useFormArgs, initialPage = 0, onSubmit, enableDevTool }) {
     const formContextMethods = useForm(useFormArgs)
 
     return (
