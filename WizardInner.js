@@ -13,7 +13,7 @@ export default function WizardInner({ children, onSubmit }) {
     const { handleSubmit } = formContext
     const wizardContext = useWizardContext()
 
-    usePageTotal(children, wizardContext.updatePageTotal)
+    usePageTotal(children, wizardContext.setPageTotal)
 
     useEffect(() => {
         if (submitted) {

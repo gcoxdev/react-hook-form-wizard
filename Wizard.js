@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { WizardContextProvider } from './WizardContextProvider'
 import { useForm, FormContext } from 'react-hook-form'
 import { StateMachineProvider, createStore, DevTool } from 'little-state-machine'
@@ -7,7 +8,7 @@ createStore({
     data: {}
 })
 
-export default function Wizard({ children, useFormArgs, initialPage, onSubmit, enableDevTool }) {
+function Wizard({ children, useFormArgs, initialPage, onSubmit, enableDevTool }) {
     const formContextMethods = useForm(useFormArgs)
 
     return (
@@ -24,3 +25,9 @@ export default function Wizard({ children, useFormArgs, initialPage, onSubmit, e
         </StateMachineProvider>
     )
 }
+
+Wizard.propTypes = {
+    onSubmit: PropTypes.func.isRequired
+}
+
+export default Wizard
