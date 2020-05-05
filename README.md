@@ -8,9 +8,12 @@ I'm still new to React so don't beat me up too bad.
 If you'd like to provide feedback or contribute please let me know.
 This is still in development.
 
+**Limitations**
+Currently only local storage is supported
+
 ---
 
-**Components included**
+**Components Included**
 
 ```
 <Wizard>
@@ -51,7 +54,7 @@ This component can contain your own components but also exposes render props for
 
 ###### Navigation
 
-## This component is just for example purposes. Would likely not be used in a real-world scenario.
+This component is just for example purposes. Would likely not be used in a real-world scenario.
 
 **Hooks API**
 
@@ -80,7 +83,7 @@ import Page2 from './Page2';
 
 function App() {
     const onSubmit = ({ dataContext, formContext, wizardContext }) => {
-        console.log(dataContext);
+        console.log(dataContext.data);
     };
 
     const useFormArgs = {
