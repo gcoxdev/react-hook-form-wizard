@@ -8,6 +8,8 @@ I'm still new to React so don't beat me up too bad.
 If you'd like to provide feedback or contribute please let me know.
 This is still in development.
 
+---
+
 **Components included**
 
 ```
@@ -21,6 +23,8 @@ This is still in development.
     <Navigation />
 </Wizard>
 ```
+
+---
 
 **Component API**
 
@@ -47,7 +51,7 @@ This component can contain your own components but also exposes render props for
 
 ###### Navigation
 
-This component is just for example purposes. Would likely not be used in a real-world scenario.
+## This component is just for example purposes. Would likely not be used in a real-world scenario.
 
 **Hooks API**
 
@@ -65,7 +69,9 @@ This component is just for example purposes. Would likely not be used in a real-
 |                  | goToPage(index)   | `(number) => {}`  | Method for navigating to a particular page. Be careful for out of bounds.     |
 |                  | isLastPage        | `boolean`         | Whether the active page is the last page.                                     |
 
-**Basic usage**
+---
+
+**Basic Usage**
 
 ```javascript
 import React from 'react';
