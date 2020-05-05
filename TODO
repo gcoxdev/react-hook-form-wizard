@@ -1,4 +1,2 @@
 1. Add additional support for little-state-machine
 2. Add ability to pass an onSubmit to each Page component
-3. Create npm package
-4. Create example on codesandbox.io
