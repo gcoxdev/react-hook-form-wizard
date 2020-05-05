@@ -9,6 +9,7 @@ If you'd like to provide feedback or contribute please let me know.
 This is still in development.
 
 **Limitations**
+
 Currently only local storage is supported
 
 ---
@@ -56,9 +57,11 @@ This component can contain your own components but also exposes render props for
 
 This component is just for example purposes. Would likely not be used in a real-world scenario.
 
+---
+
 **Hooks API**
 
-| Hook             | Methods           | Argument / Return           | Description                                                                   |
+| Hook             | State / Methods   | Return / Argument           | Description                                                                   |
 | ---------------- | ----------------- | --------------------------- | ----------------------------------------------------------------------------- |
 | useDataContext   | _see below_       |                             | Hooks into the little-state-machine store.                                    |
 |                  | action(payload)   | `(payload: Object) => void` | Method to update store state.                                                 |
