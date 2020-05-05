@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { useFormContext } from 'react-hook-form'
-import { useDataContext } from './hooks/useDataContext'
-import { useWizardContext } from './hooks/useWizardContext'
-import { usePageTotal } from './hooks/usePageTotal'
+import { useDataContext } from '../hooks/useDataContext'
+import { useWizardContext } from '../hooks/useWizardContext'
+import { usePageTotal } from '../hooks/usePageTotal'
 
 export default function WizardInner({ children, onSubmit }) {
 

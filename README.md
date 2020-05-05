@@ -82,6 +82,7 @@ This component is just for example purposes. Would likely not be used in a real-
 ```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Wizard, Progress, Pages, Page, Navigation } from 'react-hook-form-wizard';
 import Page2 from './Page2';
 
 function App() {
