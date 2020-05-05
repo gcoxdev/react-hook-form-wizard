@@ -21,7 +21,10 @@ Currently only local storage is supported
     <Progress />
     <Pages>
         <Page>
-            -- Content goes here --
+            -- Fields goes here --
+        <Page>
+        <Page>
+            -- Fields goes here --
         <Page>
     </Pages>
     <Navigation />
@@ -79,4 +82,4 @@ This component is just for example purposes. Would likely not be used in a real-
 
 **Basic Example**
 
-See [Basic example demo](https://codesandbox.io/s/gcoxdev-react-hook-form-wizard-basic-7py8c)
+See [Basic example demo](https://codesandbox.io/s/basic-example-7py8c)

@@ -1,6 +1,6 @@
 {
   "name": "react-hook-form-wizard",
-  "version": "0.1.5",
+  "version": "0.1.6-alpha",
   "description": "A simple wizard for react-hook-form",
   "author": "GCoxDev",
   "license": "MIT",
@@ -31,7 +31,9 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^16.0.0",
+    "little-state-machine": "^2.14.1",
+    "react-hook-form": "^5.6.1"
   },
   "devDependencies": {
     "microbundle-crl": "^0.13.10",
@@ -56,9 +58,5 @@
   },
   "files": [
     "dist"
-  ],
-  "dependencies": {
-    "little-state-machine": "^2.14.1",
-    "react-hook-form": "^5.6.1"
-  }
+  ]
 }
