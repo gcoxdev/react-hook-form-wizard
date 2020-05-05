@@ -17,9 +17,12 @@ export default function WizardInner({ children, onSubmit }) {
 
     useEffect(() => {
         if (submitted) {
-            onSubmit({ dataContext, formContext, wizardContext })
+            if (!wizardContext.isLastPage) {
+                wizardContext.nextPage()
+            } else {
+                onSubmit({ dataContext, formContext, wizardContext })
+            }
             setSubmitted(false)
-            if (!wizardContext.isLastPage) wizardContext.nextPage()
         }
     }, [onSubmit, dataContext, submitted, formContext, wizardContext])
 
