@@ -55,19 +55,19 @@ This component can contain your own components but also exposes render props for
 
 **Hooks API**
 
-| Hook             | Methods           | Argument / Return | Description                                                                   |
-| ---------------- | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| useDataContext   | _see below_       |                   | Hooks into the little-state-machine store.                                    |
-|                  | action(payload)   | `Object`          | Method to update store state.                                                 |
-|                  | state             | `Object`          | Returns store state.                                                          |
-| useFormContext   | _same as useForm_ |                   | see docs for [useFormContext](https://react-hook-form.com/api#useFormContext) |
-| useWizardContext | _see below_       |                   | Hooks into several states and methods for managing the wizard.                |
-|                  | activePage        | `number`          | Returns the active page that the wizard is currently on. Zero-based index.    |
-|                  | pageTotal         | `number`          | Returns the total number of Page components within the Pages component.       |
-|                  | previousPage()    | `() => {}`        | Method for navigating to the previous page.                                   |
-|                  | nextPage()        | `() => {}`        | Method for navigating to the next page.                                       |
-|                  | goToPage(index)   | `(number) => {}`  | Method for navigating to a particular page. Be careful for out of bounds.     |
-|                  | isLastPage        | `boolean`         | Whether the active page is the last page.                                     |
+| Hook             | Methods           | Argument / Return           | Description                                                                   |
+| ---------------- | ----------------- | --------------------------- | ----------------------------------------------------------------------------- |
+| useDataContext   | _see below_       |                             | Hooks into the little-state-machine store.                                    |
+|                  | action(payload)   | `(payload: Object) => void` | Method to update store state.                                                 |
+|                  | state             | `Object`                    | Returns store state.                                                          |
+| useFormContext   | _same as useForm_ |                             | see docs for [useFormContext](https://react-hook-form.com/api#useFormContext) |
+| useWizardContext | _see below_       |                             | Hooks into several states and methods for managing the wizard.                |
+|                  | activePage        | `number`                    | Returns the active page that the wizard is currently on. Zero-based index.    |
+|                  | pageTotal         | `number`                    | Returns the total number of Page components within the Pages component.       |
+|                  | previousPage()    | `() => {}`                  | Method for navigating to the previous page.                                   |
+|                  | nextPage()        | `() => {}`                  | Method for navigating to the next page.                                       |
+|                  | goToPage(index)   | `(index: number) => void`   | Method for navigating to a particular page. Be careful for out of bounds.     |
+|                  | isLastPage        | `boolean`                   | Whether the active page is the last page.                                     |
 
 ---
 
