@@ -24,24 +24,29 @@ This is still in development.
 
 **Component API**
 
-######Wizard######
-| Prop | Type | Required | Description |
-| --- | --- | --- | --- |
-| useFormArgs | Object | | Same arguments passed into useForm, see [useForm](https://react-hook-form.com/api#useForm) |
-| initialPage | number | | Which page the wizard should start. Zero-based index. |
-| onSubmit | ({ dataContext, formContext, wizardContext}) => void | Yes | The submit function that will run on the final page of the form. |
-| enableDevTool | boolean | | Enable DevTool component include in little-state-machine, see [docs](https://github.com/bluebill1049/little-state-machine#-example) |
+###### <Wizard>
 
-######Progress######
+| Prop          | Type                                                 | Required | Description                                                                                                                         |
+| ------------- | ---------------------------------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| useFormArgs   | Object                                               |          | Same arguments passed into useForm, see [useForm](https://react-hook-form.com/api#useForm)                                          |
+| initialPage   | number                                               |          | Which page the wizard should start. Zero-based index.                                                                               |
+| onSubmit      | ({ dataContext, formContext, wizardContext}) => void | Yes      | The submit function that will run on the final page of the form.                                                                    |
+| enableDevTool | boolean                                              |          | Enable DevTool component include in little-state-machine, see [docs](https://github.com/bluebill1049/little-state-machine#-example) |
+
+###### <Progress>
+
 This component is just for example purposes. Would likely not be used in a real-world scenario.
 
-######Pages######
+###### <Pages>
+
 This component is a container component for Page components
 
-######Page######
+###### <Page>
+
 This component can contain your own components but also exposes render props for using included contexts. See basic usage example.
 
-######Navigation######
+###### <Navigation>
+
 This component is just for example purposes. Would likely not be used in a real-world scenario.
 
 **Hooks included**
