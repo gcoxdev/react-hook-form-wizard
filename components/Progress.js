@@ -1,5 +1,5 @@
 import React from 'react'
-import { useWizardContext } from './hooks/useWizardContext'
+import { useWizardContext } from '../hooks/useWizardContext'
 
 export default function Progress() {
     const { activePage, pageTotal } = useWizardContext()

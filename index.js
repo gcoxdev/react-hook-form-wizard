@@ -1,8 +1,8 @@
-import Wizard from './Wizard'
-import Progress from './Progress'
-import Pages from './Pages'
-import Page from './Page'
-import Navigation from './Navigation'
+import Wizard from './components/Wizard'
+import Progress from './components/Progress'
+import Pages from './components/Pages'
+import Page from './components/Page'
+import Navigation from './components/Navigation'
 import { useDataContext } from './hooks/useDataContext'
 import { useWizardContext } from './hooks/useWizardContext'
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useWizardContext } from './hooks/useWizardContext'
+import { useWizardContext } from '../hooks/useWizardContext'
 
 export default function Navigation(props) {
     const { activePage, previousPage, pageTotal } = useWizardContext()

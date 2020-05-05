@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { WizardContextProvider } from './WizardContextProvider'
+import { WizardContextProvider } from '../context/WizardContextProvider'
 import { useForm, FormContext } from 'react-hook-form'
 import { StateMachineProvider, createStore, DevTool } from 'little-state-machine'
 

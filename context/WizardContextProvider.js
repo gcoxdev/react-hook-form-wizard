@@ -1,7 +1,7 @@
 import React from 'react'
 import WizardContext from './WizardContext'
-import { useWizard } from './hooks/useWizard'
-import WizardInner from './WizardInner'
+import { useWizard } from '../hooks/useWizard'
+import WizardInner from '../components/WizardInner'
 
 export const WizardContextProvider = ({ children, initialPage, onSubmit }) => {
     const wizard = useWizard({ initialPage })

@@ -1,6 +1,6 @@
 import { useFormContext } from 'react-hook-form'
-import { useDataContext } from './hooks/useDataContext'
-import { useWizardContext } from './hooks/useWizardContext'
+import { useDataContext } from '../hooks/useDataContext'
+import { useWizardContext } from '../hooks/useWizardContext'
 
 export default function Page({ children }) {
     const dataContext = useDataContext()
