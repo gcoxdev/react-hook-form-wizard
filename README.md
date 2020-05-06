@@ -21,11 +21,13 @@ Currently only local storage is supported
     <Progress />
     <Pages>
         <Page>
-            -- Fields goes here --
+            <YourCustomPageComponent />
+        </Page>
         <Page>
-        <Page>
-            -- Fields goes here --
-        <Page>
+            {(dataContext, formContext, wizardContext) => {
+                -- Form fields go here with access to context methods via render prop --
+            }}
+        </Page>
     </Pages>
     <Navigation />
 </Wizard>

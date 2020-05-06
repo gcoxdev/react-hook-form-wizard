@@ -1,8 +1,8 @@
 import { useWizardContext } from '../hooks/useWizardContext'
 
 export default function Pages({ children }) {
-    const { activePage, pageTotal } = useWizardContext()
-    if (pageTotal > 1) {
+    const { activePage } = useWizardContext()
+    if (Array.isArray(children)) {
         return children[activePage]
     } else {
         return children

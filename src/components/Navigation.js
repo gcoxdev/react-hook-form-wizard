@@ -5,7 +5,11 @@ export default function Navigation(props) {
     const { activePage, previousPage, pageTotal } = useWizardContext()
     return (
         <div>
-            {activePage > 0 && <button onClick={previousPage}>Previous</button>}
+            {activePage > 0 && (
+                <button type="button" onClick={previousPage}>
+                    Previous
+                </button>
+            )}
             <button type="submit">
                 {activePage === pageTotal - 1 ? 'Submit' : 'Next'}
             </button>

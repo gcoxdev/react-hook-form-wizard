@@ -8,9 +8,7 @@ export const WizardContextProvider = ({ children, initialPage, onSubmit }) => {
 
     return (
         <WizardContext.Provider value={wizard}>
-            <WizardInner onSubmit={onSubmit}>
-                {children}
-            </WizardInner>
+            <WizardInner onSubmit={onSubmit}>{children}</WizardInner>
         </WizardContext.Provider>
     )
 }

@@ -8,5 +8,13 @@ export const useWizard = ({ initialPage }) => {
     const goToPage = (pageIndex) => setActivePage(pageIndex)
     const isLastPage = activePage === pageTotal - 1
 
-    return { activePage, pageTotal, previousPage, nextPage, goToPage, isLastPage, setPageTotal }
+    return {
+        activePage,
+        pageTotal,
+        previousPage,
+        nextPage,
+        goToPage,
+        isLastPage,
+        setPageTotal
+    }
 }
